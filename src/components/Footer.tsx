@@ -166,7 +166,7 @@ export default function Footer() {
               </a>
               {/* Instagram */}
               <a
-                href="https://instagram.com/palmedicalstore"
+                href="https://instagram.com/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -186,7 +186,7 @@ export default function Footer() {
               </a>
               {/* Twitter / X */}
               <a
-                href="https://x.com/palmedicalstore"
+                href="https://x.com/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter / X"
