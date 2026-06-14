@@ -11,7 +11,7 @@ export default function TopBar() {
           <span className="flex items-center gap-1.5">
             <Clock className="w-3 h-3 text-brand-200" />
             <span className="hidden sm:inline">Mon – Sun :</span>
-            <span>8:00 AM – 10:00 PM</span>
+            <span>06:00 AM – 10:00 PM</span>
           </span>
           <span className="flex items-center gap-1.5">
             <MapPin className="w-3 h-3 text-brand-200" />

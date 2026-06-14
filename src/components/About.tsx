@@ -44,7 +44,7 @@ export default function About() {
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Trusted Healthcare Partner{" "}
-            <span className="gradient-text">Since 2009</span>
+            <span className="gradient-text">Since 2010</span>
           </h2>
           <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
             Pal Medical Store has been serving the Jaunpur community for over 15

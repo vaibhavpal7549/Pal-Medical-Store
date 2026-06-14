@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
             </a>
             <p className="text-sm text-surface-400 leading-relaxed mb-6 max-w-xs">
-              Your trusted pharmacy partner in Jaunpur since 2009. Genuine
+              Your trusted pharmacy partner in Jaunpur since 2010. Genuine
               medicines, expert guidance, and compassionate care — always.
             </p>
 
@@ -144,7 +144,7 @@ export default function Footer() {
               <li>
                 <a href="https://maps.google.com/?q=Pal+Medical+Store+Jaunpur" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
                   <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
-                  Main Market, Jaunpur, Uttar Pradesh 222001, India
+                  Pal Medical Store, Shahganj Road, Patti Narendrapur, Jaunpur, Uttar Pradesh, 223102, India
                 </a>
               </li>
             </ul>
@@ -204,7 +204,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Pal Medical Store. All rights reserved.
           </p>
           <p className="text-xs text-surface-500 flex items-center gap-1">
-            Made with <Heart className="w-3 h-3 text-rose-500 fill-rose-500" /> in Jaunpur
+            Made with <Heart className="w-3 h-3 text-rose-500 fill-rose-500" /> by Pal Family
           </p>
         </div>
       </div>

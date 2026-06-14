@@ -40,7 +40,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Main Market, Jaunpur, UP 222001",
+    value: "Pal Medical Store, Shahganj Road, Patti Narendrapur, Jaunpur, Uttar Pradesh, 223102, India",
     href: "https://maps.google.com/?q=Pal+Medical+Store+Jaunpur+Uttar+Pradesh",
     color: "text-amber-600",
     bg: "bg-amber-50 dark:bg-amber-900/20",
@@ -48,7 +48,7 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Working Hours",
-    value: "Mon – Sun: 8:00 AM – 10:00 PM",
+    value: "Mon – Sun: 06:00 AM – 10:00 PM",
     href: undefined,
     color: "text-violet-600",
     bg: "bg-violet-50 dark:bg-violet-900/20",
