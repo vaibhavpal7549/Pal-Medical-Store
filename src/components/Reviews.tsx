@@ -1,9 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import Image from "next/image";
+
+interface Review {
+  name: string;
+  role: string;
+  rating: number;
+  text: string;
+  avatar: string;
+  profile_photo_url?: string;
+}
 
 const reviews = [
   {
@@ -52,9 +62,40 @@ const reviews = [
 
 export default function Reviews() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [reviewsData, setReviewsData] = useState<Review[]>(reviews);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const res = await fetch("/api/reviews");
+        if (!res.ok) throw new Error("Failed to fetch");
+        const data = await res.json();
+        
+        if (Array.isArray(data) && data.length > 0) {
+          const formattedReviews = data.map((r: any) => ({
+            name: r.author_name,
+            role: r.relative_time_description || "Customer",
+            rating: r.rating,
+            text: r.text,
+            avatar: r.author_name.charAt(0).toUpperCase(),
+            profile_photo_url: r.profile_photo_url,
+          }));
+          setReviewsData(formattedReviews);
+        }
+      } catch (error) {
+        console.error("Error fetching live reviews, using fallback.", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReviews();
+  }, []);
+
   const perPage = 3;
-  const totalPages = Math.ceil(reviews.length / perPage);
-  const displayed = reviews.slice(
+  const totalPages = Math.ceil(reviewsData.length / perPage);
+  const displayed = reviewsData.slice(
     currentPage * perPage,
     currentPage * perPage + perPage
   );
@@ -78,8 +119,7 @@ export default function Reviews() {
             What Our <span className="gradient-text">Customers Say</span>
           </h2>
           <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
-            Real reviews from real customers — hear from the families and
-            individuals who trust Pal Medical Store.
+            All customer reviews are fetched directly from the Google Business Profile (Google Maps) listing of Pal Medical Store.
           </p>
         </AnimatedSection>
 
@@ -92,7 +132,7 @@ export default function Reviews() {
             transition={{ duration: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {displayed.map(({ name, role, rating, text, avatar }) => (
+            {displayed.map(({ name, role, rating, text, avatar, profile_photo_url }) => (
               <div
                 key={name}
                 className="group relative p-7 rounded-2xl border card-hover"
@@ -125,9 +165,13 @@ export default function Reviews() {
 
                 {/* Reviewer */}
                 <div className="flex items-center gap-3 pt-4 border-t" style={{ borderColor: "var(--card-border)" }}>
-                  <div className="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white text-sm font-bold shadow-md">
-                    {avatar}
-                  </div>
+                  {profile_photo_url ? (
+                    <Image src={profile_photo_url} alt={name} width={40} height={40} className="rounded-full shadow-md w-10 h-10 object-cover" unoptimized />
+                  ) : (
+                    <div className="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white text-sm font-bold shadow-md shrink-0">
+                      {avatar}
+                    </div>
+                  )}
                   <div>
                     <div className="text-sm font-bold">{name}</div>
                     <div className="text-xs text-surface-500 dark:text-surface-400">
