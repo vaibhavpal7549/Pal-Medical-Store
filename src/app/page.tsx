@@ -1,6 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/context/ThemeContext";
+import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -16,6 +17,7 @@ import FloatingButtons from "@/components/FloatingButtons";
 export default function Home() {
   return (
     <ThemeProvider>
+      <TopBar />
       <Navbar />
       <main className="flex-1">
         <Hero />

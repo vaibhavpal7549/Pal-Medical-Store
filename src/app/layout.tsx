@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Pal Medical Store — Your Trusted Pharmacy in Jaunpur | Genuine Medicines & Home Delivery",
   description:
-    "Pal Medical Store is Jaunpur's trusted pharmacy since 2009. Buy genuine prescription medicines, OTC drugs, health supplements, baby care products & medical equipment. Free home delivery available. Call +91 98765 43210.",
+    "Pal Medical Store is Jaunpur's trusted pharmacy since 2009. Buy genuine prescription medicines, OTC drugs, health supplements, baby care products & medical equipment. Free home delivery available. Call +91 85428 43544.",
   keywords: [
     "Pal Medical Store",
     "pharmacy Jaunpur",
@@ -72,8 +72,8 @@ export default function RootLayout({
                 postalCode: "222001",
                 addressCountry: "IN",
               },
-              telephone: "+919876543210",
-              email: "info@palmedical.com",
+              telephone: "+918542843544",
+              email: "palmedicalstore98390gh@gmail.com",
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [

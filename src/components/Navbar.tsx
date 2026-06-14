@@ -108,13 +108,13 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
             ? "shadow-lg border-b"
             : "shadow-none border-b border-transparent"
         }`}
         style={{
-          background: scrolled ? "var(--nav-bg)" : "var(--nav-bg)",
+          background: "var(--nav-bg)",
           borderColor: scrolled ? "var(--nav-border)" : "transparent",
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
@@ -212,7 +212,7 @@ export default function Navbar() {
 
               {/* Call CTA */}
               <a
-                href="tel:+919876543210"
+                href="tel:+918542843544"
                 className="hidden sm:flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white rounded-xl gradient-bg hover:opacity-90 transition-opacity shadow-md"
               >
                 <Phone className="w-4 h-4" />
@@ -356,7 +356,7 @@ export default function Navbar() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-4 border-t" style={{ borderColor: "var(--card-border)" }}>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918542843544"
                   className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold text-white rounded-xl gradient-bg shadow-md"
                 >
                   <Phone className="w-4 h-4" />

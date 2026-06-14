@@ -100,7 +100,7 @@ export default function Hero() {
             className="mt-10 flex flex-wrap gap-4"
           >
             <a
-              href="tel:+919876543210"
+              href="tel:+918542843544"
               id="hero-call-btn"
               className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-white text-brand-700 font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 text-sm sm:text-base"
             >
@@ -108,7 +108,7 @@ export default function Hero() {
               Call Now
             </a>
             <a
-              href="https://wa.me/919876543210?text=Hi%20Pal%20Medical%20Store%2C%20I%20need%20some%20medicines."
+              href="https://wa.me/918542843544?text=Hi%20Pal%20Medical%20Store%2C%20I%20need%20some%20medicines."
               target="_blank"
               rel="noopener noreferrer"
               id="hero-whatsapp-btn"
