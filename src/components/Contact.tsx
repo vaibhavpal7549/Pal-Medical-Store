@@ -146,16 +146,18 @@ export default function Contact() {
 
             {/* Google Maps Embed */}
             <div className="rounded-2xl overflow-hidden border shadow-lg aspect-video" style={{ borderColor: "var(--card-border)" }}>
-              <iframe
+              {/* <iframe
                 title="Pal Medical Store Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57618.61644754!2d82.6637!3d25.7461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b38e00cc15d8f%3A0x11e49a28e9eb8054!2sJaunpur%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              />
+              /> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.8806513605327!2d82.51941857526383!3d26.037460777179643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399067c1e5d490af%3A0x34bd9d6d7ca43a89!2sPal%20Medical%20Store!5e0!3m2!1sen!2sus!4v1781444862062!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </AnimatedSection>
 
