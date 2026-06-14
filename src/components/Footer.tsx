@@ -142,7 +142,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://maps.google.com/?q=Pal+Medical+Store+Jaunpur" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
+                <a href="https://www.google.com/maps/place/Pal+Medical+Store/@26.0374607,82.5171226,17z/data=!3m1!4b1!4m6!3m5!1s0x399067c1e5d490af:0x34bd9d6d7ca43a89!8m2!3d26.0374608!4d82.5219935!16s%2Fg%2F11h4_zzhpk?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
                   <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
                   Pal Medical Store, Shahganj Road, Patti Narendrapur, Jaunpur, Uttar Pradesh, 223102, India
                 </a>
