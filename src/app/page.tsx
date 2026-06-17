@@ -8,6 +8,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Products from "@/components/Products";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import PhotoGallery from "@/components/PhotoGallery";
 import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -25,6 +26,7 @@ export default function Home() {
         <Services />
         <Products />
         <WhyChooseUs />
+        <PhotoGallery />
         <Reviews />
         <Contact />
         <FAQ />
