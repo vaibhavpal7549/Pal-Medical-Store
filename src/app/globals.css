@@ -515,3 +515,73 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* ── Facebook Feed Styles ───────────────────────────────────── */
+.fb-widget-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-lg);
+  transition: box-shadow 0.3s ease;
+}
+
+.fb-widget-container:hover {
+  box-shadow:
+    var(--shadow-xl),
+    0 0 0 1px rgba(24, 119, 242, 0.08),
+    0 0 40px rgba(24, 119, 242, 0.05);
+}
+
+.fb-widget-container > div {
+  width: 100%;
+}
+
+/* ── Facebook CTA Button ────────────────────────────────────── */
+.fb-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #1877F2, #0d5bc4);
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.fb-cta-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fb-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(24, 119, 242, 0.4);
+}
+
+.fb-cta-button:hover::before {
+  opacity: 1;
+}
+
+.fb-cta-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}

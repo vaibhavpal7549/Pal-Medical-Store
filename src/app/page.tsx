@@ -9,6 +9,7 @@ import Services from "@/components/Services";
 import Products from "@/components/Products";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import PhotoGallery from "@/components/PhotoGallery";
+import FacebookFeed from "@/components/FacebookFeed";
 import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
@@ -27,6 +28,7 @@ export default function Home() {
         <Products />
         <WhyChooseUs />
         <PhotoGallery />
+        <FacebookFeed />
         <Reviews />
         <Contact />
         <FAQ />
