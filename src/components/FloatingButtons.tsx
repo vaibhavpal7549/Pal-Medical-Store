@@ -21,9 +21,6 @@ export default function FloatingButtons() {
         target="_blank"
         rel="noopener noreferrer"
         id="floating-whatsapp"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ delay: 1, type: "spring", stiffness: 200, damping: 15 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-xl hover:shadow-2xl transition-shadow"
@@ -41,9 +38,6 @@ export default function FloatingButtons() {
       <motion.a
         href="tel:+917393970252"
         id="floating-call"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ delay: 1.2, type: "spring", stiffness: 200, damping: 15 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full gradient-bg text-white flex items-center justify-center shadow-xl sm:hidden"

@@ -49,12 +49,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40 w-full">
         <div className="max-w-3xl">
           {/* Trust Badges */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-wrap gap-3 mb-8"
-          >
+          <div className="flex flex-wrap gap-3 mb-8">
             {badges.map(({ icon: Icon, label }) => (
               <div
                 key={label}
@@ -64,41 +59,26 @@ export default function Hero() {
                 {label}
               </div>
             ))}
-          </motion.div>
+          </div>
 
           {/* Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-[1.1] tracking-tight"
-          >
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-[1.1] tracking-tight">
             Your Trusted{" "}
             <span className="relative">
               <span className="relative z-10">Pharmacy</span>
               <span className="absolute bottom-2 left-0 right-0 h-3 bg-white/20 rounded-sm -z-0" />
             </span>{" "}
             Partner
-          </motion.h1>
+          </h1>
 
           {/* Subheading */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.35 }}
-            className="mt-6 text-lg sm:text-xl text-white/85 max-w-2xl leading-relaxed"
-          >
+          <p className="mt-6 text-lg sm:text-xl text-white/85 max-w-2xl leading-relaxed">
             Providing Genuine Medicines &amp; Healthcare Products with Care and
             Trust. Your health is our priority at Pal Medical Store, Jaunpur.
-          </motion.p>
+          </p>
 
           {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="mt-10 flex flex-wrap gap-4"
-          >
+          <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="tel:+917393970252"
               id="hero-call-btn"
@@ -127,15 +107,10 @@ export default function Hero() {
               <MapPin className="w-5 h-5" />
               Get Directions
             </a>
-          </motion.div>
+          </div>
 
           {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.65 }}
-            className="mt-14 grid grid-cols-3 gap-6 max-w-md"
-          >
+          <div className="mt-14 grid grid-cols-3 gap-6 max-w-md">
             {[
               { value: "15+", label: "Years Experience" },
               { value: "10K+", label: "Happy Customers" },
@@ -148,7 +123,7 @@ export default function Hero() {
                 <div className="text-xs sm:text-sm text-white/80 font-medium mt-1">{label}</div>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
 
@@ -161,12 +136,7 @@ export default function Hero() {
       />
 
       {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-      >
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <motion.a
           href="#about"
           onClick={(e) => {
@@ -182,7 +152,7 @@ export default function Hero() {
           </span>
           <ArrowDown className="w-4 h-4" />
         </motion.a>
-      </motion.div>
+      </div>
     </section>
   );
 }
