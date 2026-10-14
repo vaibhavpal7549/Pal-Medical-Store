@@ -16,16 +16,16 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 85428 43544",
-    href: "tel:+918542843544",
+    value: "+91 73939 70252",
+    href: "tel:+917393970252",
     color: "text-blue-600",
     bg: "bg-blue-50 dark:bg-blue-900/20",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+91 85428 43544",
-    href: "https://wa.me/918542843544",
+    value: "+91 73939 70252",
+    href: "https://wa.me/917393970252",
     color: "text-emerald-600",
     bg: "bg-emerald-50 dark:bg-emerald-900/20",
   },
@@ -70,7 +70,7 @@ export default function Contact() {
     // Build WhatsApp message
     const text = `Name: ${formState.name}%0APhone: ${formState.phone}%0AMessage: ${formState.message}`;
     window.open(
-      `https://wa.me/918542843544?text=${text}`,
+      `https://wa.me/917393970252?text=${text}`,
       "_blank"
     );
     setSubmitted(true);

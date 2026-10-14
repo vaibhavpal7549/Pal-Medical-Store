@@ -22,11 +22,11 @@ export default function TopBar() {
         {/* Right Side */}
         <div className="flex items-center gap-4 sm:gap-6">
           <a
-            href="tel:+918542843544"
+            href="tel:+917393970252"
             className="flex items-center gap-1.5 hover:text-brand-100 transition-colors"
           >
             <Phone className="w-3 h-3 text-brand-200" />
-            <span>+91 85428 43544</span>
+            <span>+91 73939 70252</span>
           </a>
           <a
             href="mailto:palmedicalstore98390gh@gmail.com"

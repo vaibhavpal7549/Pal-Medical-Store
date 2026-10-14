@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   Pill,
   Phone,
@@ -53,9 +54,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <a href="#home" onClick={(e) => { e.preventDefault(); handleNavClick("#home"); }} className="flex items-center gap-2.5 mb-5">
-              <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center shadow-lg">
-                <Pill className="w-5 h-5 text-white" />
+            <a href="#home" onClick={(e) => { e.preventDefault(); handleNavClick("#home"); }} className="flex items-center gap-2.5 mb-5 group">
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden p-0.5 border border-surface-700">
+                <Image
+                  src="/logo.jpg"
+                  alt="Pal Medical Store"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="text-white text-lg font-bold leading-tight">
@@ -130,9 +137,9 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+918542843544" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
+                <a href="tel:+917393970252" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
                   <Phone className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
-                  +91 85428 43544
+                  +91 73939 70252
                 </a>
               </li>
               <li>

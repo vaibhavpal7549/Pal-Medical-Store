@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "@/context/ThemeContext";
 import {
@@ -131,8 +132,15 @@ export default function Navbar() {
               }}
               className="flex items-center gap-2.5 group"
             >
-              <div className="w-9 h-9 rounded-xl gradient-bg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                <Pill className="w-5 h-5 text-white" />
+              <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center shadow-md group-hover:shadow-lg transition-all overflow-hidden p-0.5 border border-surface-200 dark:border-surface-700">
+                <Image
+                  src="/logo.jpg"
+                  alt="Pal Medical Store"
+                  width={36}
+                  height={36}
+                  className="w-full h-full object-contain"
+                  priority
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-base font-bold leading-tight tracking-tight">
@@ -212,7 +220,7 @@ export default function Navbar() {
 
               {/* Call CTA */}
               <a
-                href="tel:+918542843544"
+                href="tel:+917393970252"
                 className="hidden sm:flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white rounded-xl gradient-bg hover:opacity-90 transition-opacity shadow-md"
               >
                 <Phone className="w-4 h-4" />
@@ -318,11 +326,20 @@ export default function Navbar() {
               style={{ background: "var(--card-bg)" }}
             >
               <div className="flex items-center justify-between p-4 border-b" style={{ borderColor: "var(--card-border)" }}>
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
-                    <Pill className="w-4 h-4 text-white" />
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-sm overflow-hidden p-0.5 border border-surface-200 dark:border-surface-700">
+                    <Image
+                      src="/logo.jpg"
+                      alt="Pal Medical Store"
+                      width={32}
+                      height={32}
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                  <span className="font-bold text-sm">Pal Medical Store</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-sm leading-tight">Pal Medical</span>
+                    <span className="text-[10px] font-medium text-brand-500 uppercase tracking-wider leading-none">Store</span>
+                  </div>
                 </div>
                 <button
                   onClick={() => setMobileOpen(false)}
@@ -356,7 +373,7 @@ export default function Navbar() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-4 border-t" style={{ borderColor: "var(--card-border)" }}>
                 <a
-                  href="tel:+918542843544"
+                  href="tel:+917393970252"
                   className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold text-white rounded-xl gradient-bg shadow-md"
                 >
                   <Phone className="w-4 h-4" />
