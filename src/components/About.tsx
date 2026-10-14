@@ -39,14 +39,14 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-100 dark:bg-brand-900/30 dark:text-brand-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             About Us
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Trusted Healthcare Partner{" "}
             <span className="gradient-text">Since 2010</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
             Pal Medical Store has been serving the Jaunpur community for over 15
             years, providing genuine medicines, health supplements, and
             personalised healthcare advice. We believe in building lasting
@@ -58,17 +58,17 @@ export default function About() {
           {highlights.map(({ icon: Icon, title, desc }, i) => (
             <AnimatedSection key={title} delay={i * 0.1} direction="up">
               <div
-                className="group relative p-6 rounded-2xl border card-hover h-full"
+                className="group relative p-6 rounded-2xl border card-hover h-full transition-all"
                 style={{
                   background: "var(--card-bg)",
                   borderColor: "var(--card-border)",
                 }}
               >
-                <div className="w-12 h-12 rounded-xl bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-6 h-6 text-brand-500" />
+                <div className="w-12 h-12 rounded-xl bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-brand-100 dark:border-brand-800/40">
+                  <Icon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">{title}</h3>
-                <p className="text-sm text-surface-500 dark:text-surface-400 leading-relaxed">
+                <h3 className="text-lg font-bold mb-2 text-surface-900 dark:text-surface-50">{title}</h3>
+                <p className="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
                   {desc}
                 </p>
                 {/* Hover accent line */}

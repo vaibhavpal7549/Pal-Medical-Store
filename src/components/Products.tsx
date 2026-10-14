@@ -70,14 +70,14 @@ export default function Products() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-100 dark:bg-brand-900/30 dark:text-brand-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Product Categories
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Browse Our{" "}
             <span className="gradient-text">Product Range</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
             Explore thousands of healthcare products across categories. 
             All products sourced from authorised distributors.
           </p>
@@ -88,7 +88,7 @@ export default function Products() {
             ({ icon: Icon, title, desc, count, gradient, hoverBg }, i) => (
               <AnimatedSection key={title} delay={i * 0.08}>
                 <div
-                  className={`group relative p-6 rounded-2xl border card-hover cursor-pointer overflow-hidden h-full ${hoverBg}`}
+                  className={`group relative p-6 rounded-2xl border card-hover cursor-pointer overflow-hidden h-full shadow-xs hover:shadow-lg transition-all ${hoverBg}`}
                   style={{
                     background: "var(--card-bg)",
                     borderColor: "var(--card-border)",
@@ -101,14 +101,14 @@ export default function Products() {
                       <Icon className="w-7 h-7 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-lg font-bold mb-1">{title}</h3>
-                      <p className="text-sm text-surface-500 dark:text-surface-400">
+                      <h3 className="text-lg font-bold mb-1 text-surface-900 dark:text-surface-50">{title}</h3>
+                      <p className="text-sm text-surface-600 dark:text-surface-300">
                         {desc}
                       </p>
                     </div>
                   </div>
                   <div className="mt-5 flex items-center justify-between pt-4 border-t" style={{ borderColor: "var(--card-border)" }}>
-                    <span className="text-xs font-semibold text-surface-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-surface-500 dark:text-surface-400 uppercase tracking-wider">
                       Products Available
                     </span>
                     <span className="text-lg font-extrabold gradient-text">

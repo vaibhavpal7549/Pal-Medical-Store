@@ -112,7 +112,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               id="hero-whatsapp-btn"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-emerald-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:bg-emerald-500 hover:scale-[1.02] transition-all duration-300 text-sm sm:text-base border border-white/20"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#25D366] text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:bg-[#20ba59] hover:scale-[1.02] transition-all duration-300 text-sm sm:text-base border border-white/20"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp Us
@@ -122,7 +122,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               id="hero-directions-btn"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-white/10 text-white font-bold rounded-2xl backdrop-blur-sm border border-white/25 hover:bg-white/20 hover:scale-[1.02] transition-all duration-300 text-sm sm:text-base"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-white/15 text-white font-bold rounded-2xl backdrop-blur-md border border-white/30 hover:bg-white/25 hover:scale-[1.02] transition-all duration-300 text-sm sm:text-base shadow-lg"
             >
               <MapPin className="w-5 h-5" />
               Get Directions
@@ -145,12 +145,20 @@ export default function Hero() {
                 <div className="text-2xl sm:text-3xl font-extrabold text-white">
                   {value}
                 </div>
-                <div className="text-xs sm:text-sm text-white/70 mt-1">{label}</div>
+                <div className="text-xs sm:text-sm text-white/80 font-medium mt-1">{label}</div>
               </div>
             ))}
           </motion.div>
         </div>
       </div>
+
+      {/* Soft gradient fade into the next section */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none"
+        style={{
+          background: "linear-gradient(to top, var(--section-alt-bg), transparent)",
+        }}
+      />
 
       {/* Scroll indicator */}
       <motion.div
@@ -167,9 +175,9 @@ export default function Hero() {
           }}
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center gap-2 text-white/60 hover:text-white/90 transition-colors"
+          className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors"
         >
-          <span className="text-xs font-medium tracking-wider uppercase">
+          <span className="text-xs font-semibold tracking-wider uppercase">
             Scroll Down
           </span>
           <ArrowDown className="w-4 h-4" />

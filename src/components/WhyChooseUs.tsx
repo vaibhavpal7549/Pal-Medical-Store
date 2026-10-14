@@ -45,7 +45,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="section-padding relative overflow-hidden">
+    <section id="why-us" className="section-padding relative overflow-hidden bg-white dark:bg-surface-900">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-500/[0.03] dark:bg-brand-500/[0.05] rounded-full blur-3xl" />
@@ -53,14 +53,14 @@ export default function WhyChooseUs() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-100 dark:bg-brand-900/30 dark:text-brand-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Why Choose Us
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Why Families{" "}
             <span className="gradient-text">Trust Us</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
             We don&apos;t just sell medicines — we deliver care, trust, and peace of
             mind to every customer who walks through our doors.
           </p>
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
           {reasons.map(({ icon: Icon, title, desc }, i) => (
             <AnimatedSection key={title} delay={i * 0.08}>
               <div
-                className="group relative flex items-start gap-5 p-6 rounded-2xl border card-hover h-full"
+                className="group relative flex items-start gap-5 p-6 rounded-2xl border card-hover h-full shadow-xs hover:shadow-lg transition-all"
                 style={{
                   background: "var(--card-bg)",
                   borderColor: "var(--card-border)",
@@ -80,8 +80,8 @@ export default function WhyChooseUs() {
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-1.5">{title}</h3>
-                  <p className="text-sm text-surface-500 dark:text-surface-400 leading-relaxed">
+                  <h3 className="text-lg font-bold mb-1.5 text-surface-900 dark:text-surface-50">{title}</h3>
+                  <p className="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
                     {desc}
                   </p>
                 </div>

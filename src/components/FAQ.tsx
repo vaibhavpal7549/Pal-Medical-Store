@@ -51,14 +51,14 @@ export default function FAQ() {
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-100 dark:bg-brand-900/30 dark:text-brand-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             FAQ
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Frequently Asked{" "}
             <span className="gradient-text">Questions</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
             Got questions? We&apos;ve got answers. Find quick answers to common
             queries about our products and services.
           </p>
@@ -70,21 +70,21 @@ export default function FAQ() {
             return (
               <AnimatedSection key={i} delay={i * 0.05}>
                 <div
-                  className="rounded-2xl border overflow-hidden transition-shadow"
+                  className="rounded-2xl border overflow-hidden transition-all duration-200 shadow-2xs hover:shadow-xs"
                   style={{
                     background: "var(--card-bg)",
                     borderColor: isOpen
                       ? "var(--color-brand-500)"
                       : "var(--card-border)",
-                    boxShadow: isOpen ? "var(--shadow-md)" : "none",
+                    boxShadow: isOpen ? "var(--shadow-md)" : undefined,
                   }}
                 >
                   <button
                     id={`faq-${i}`}
                     onClick={() => setOpenIndex(isOpen ? null : i)}
-                    className="w-full flex items-center justify-between gap-4 p-5 text-left"
+                    className="w-full flex items-center justify-between gap-4 p-5 text-left transition-colors hover:bg-surface-50/50 dark:hover:bg-surface-800/50"
                   >
-                    <span className="text-sm sm:text-base font-semibold pr-4">
+                    <span className="text-sm sm:text-base font-bold text-surface-900 dark:text-surface-100 pr-4">
                       {q}
                     </span>
                     <motion.span
@@ -94,7 +94,7 @@ export default function FAQ() {
                     >
                       <ChevronDown
                         className={`w-5 h-5 transition-colors ${
-                          isOpen ? "text-brand-500" : "text-surface-400"
+                          isOpen ? "text-brand-600 dark:text-brand-400" : "text-surface-400"
                         }`}
                       />
                     </motion.span>
@@ -108,7 +108,7 @@ export default function FAQ() {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                       >
-                        <div className="px-5 pb-5 text-sm text-surface-500 dark:text-surface-400 leading-relaxed border-t pt-4" style={{ borderColor: "var(--card-border)" }}>
+                        <div className="px-5 pb-5 text-sm text-surface-600 dark:text-surface-300 leading-relaxed border-t pt-4" style={{ borderColor: "var(--card-border)" }}>
                           {a}
                         </div>
                       </motion.div>

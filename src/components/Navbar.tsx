@@ -111,12 +111,12 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "shadow-lg border-b"
-            : "shadow-none border-b border-transparent"
+            ? "shadow-md border-b"
+            : "border-b border-surface-200/70 dark:border-transparent shadow-2xs"
         }`}
         style={{
           background: "var(--nav-bg)",
-          borderColor: scrolled ? "var(--nav-border)" : "transparent",
+          borderColor: scrolled ? "var(--nav-border)" : undefined,
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
         }}
@@ -146,7 +146,7 @@ export default function Navbar() {
                 <span className="text-base font-bold leading-tight tracking-tight">
                   Pal Medical
                 </span>
-                <span className="text-[10px] font-medium text-brand-500 uppercase tracking-widest leading-none">
+                <span className="text-[10px] font-semibold text-brand-600 dark:text-brand-400 uppercase tracking-widest leading-none">
                   Store
                 </span>
               </div>
@@ -162,18 +162,18 @@ export default function Navbar() {
                     e.preventDefault();
                     handleNavClick(href);
                   }}
-                  className={`relative px-3 py-2 text-sm font-medium rounded-lg transition-colors
+                  className={`relative px-3.5 py-2 text-sm font-semibold rounded-lg transition-colors
                     ${
                       activeSection === href.replace("#", "")
-                        ? "text-brand-500"
-                        : "text-surface-600 dark:text-surface-300 hover:text-brand-500"
+                        ? "text-brand-600 dark:text-brand-400"
+                        : "text-surface-700 dark:text-surface-300 hover:text-brand-600 dark:hover:text-brand-400"
                     }`}
                 >
                   {label}
                   {activeSection === href.replace("#", "") && (
                     <motion.div
                       layoutId="nav-indicator"
-                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-brand-500 rounded-full"
+                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-brand-600 dark:bg-brand-400 rounded-full"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}

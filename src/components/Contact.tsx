@@ -79,16 +79,16 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding bg-white dark:bg-surface-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-100 dark:bg-brand-900/30 dark:text-brand-400 mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Contact Us
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
             Have a question about medicines or need a prescription filled?
             Reach out to us — we&apos;re always here to help.
           </p>
@@ -105,7 +105,7 @@ export default function Contact() {
                       href={href}
                       target={href.startsWith("http") ? "_blank" : undefined}
                       rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                      className="flex items-center gap-4 p-4 rounded-xl border card-hover group"
+                      className="flex items-center gap-4 p-4 rounded-xl border card-hover group shadow-2xs"
                       style={{
                         background: "var(--card-bg)",
                         borderColor: "var(--card-border)",
@@ -115,15 +115,15 @@ export default function Contact() {
                         <Icon className={`w-5 h-5 ${color}`} />
                       </div>
                       <div>
-                        <div className="text-xs font-semibold text-surface-400 uppercase tracking-wider mb-0.5">
+                        <div className="text-xs font-semibold text-surface-500 dark:text-surface-400 uppercase tracking-wider mb-0.5">
                           {label}
                         </div>
-                        <div className="text-sm font-medium">{value}</div>
+                        <div className="text-sm font-semibold text-surface-900 dark:text-surface-100">{value}</div>
                       </div>
                     </a>
                   ) : (
                     <div
-                      className="flex items-center gap-4 p-4 rounded-xl border"
+                      className="flex items-center gap-4 p-4 rounded-xl border shadow-2xs"
                       style={{
                         background: "var(--card-bg)",
                         borderColor: "var(--card-border)",
@@ -133,10 +133,10 @@ export default function Contact() {
                         <Icon className={`w-5 h-5 ${color}`} />
                       </div>
                       <div>
-                        <div className="text-xs font-semibold text-surface-400 uppercase tracking-wider mb-0.5">
+                        <div className="text-xs font-semibold text-surface-500 dark:text-surface-400 uppercase tracking-wider mb-0.5">
                           {label}
                         </div>
-                        <div className="text-sm font-medium">{value}</div>
+                        <div className="text-sm font-semibold text-surface-900 dark:text-surface-100">{value}</div>
                       </div>
                     </div>
                   )}
@@ -145,7 +145,7 @@ export default function Contact() {
             </div>
 
             {/* Google Maps Embed */}
-            <div className="rounded-2xl overflow-hidden border shadow-lg aspect-video" style={{ borderColor: "var(--card-border)" }}>
+            <div className="rounded-2xl overflow-hidden border shadow-md aspect-video" style={{ borderColor: "var(--card-border)" }}>
               <iframe
                 title="Pal Medical Store Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.8806513605327!2d82.51941857526383!3d26.037460777179643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399067c1e5d490af%3A0x34bd9d6d7ca43a89!2sPal%20Medical%20Store!5e0!3m2!1sen!2sus!4v1781444862062!5m2!1sen!2sus"
@@ -157,31 +157,30 @@ export default function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-
             </div>
           </AnimatedSection>
 
           {/* Contact Form */}
           <AnimatedSection direction="right">
             <div
-              className="p-8 rounded-2xl border shadow-lg"
+              className="p-8 rounded-2xl border shadow-sm"
               style={{
                 background: "var(--card-bg)",
                 borderColor: "var(--card-border)",
               }}
             >
-              <h3 className="text-xl font-bold mb-2">Send Us a Message</h3>
-              <p className="text-sm text-surface-500 dark:text-surface-400 mb-6">
+              <h3 className="text-xl font-bold mb-2 text-surface-900 dark:text-surface-50">Send Us a Message</h3>
+              <p className="text-sm text-surface-600 dark:text-surface-300 mb-6">
                 Fill in the form below and we&apos;ll get back to you via WhatsApp.
               </p>
 
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
                   <div className="w-16 h-16 rounded-full bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mb-4">
-                    <CheckCircle className="w-8 h-8 text-brand-500" />
+                    <CheckCircle className="w-8 h-8 text-brand-600" />
                   </div>
                   <h4 className="text-lg font-bold mb-1">Message Sent!</h4>
-                  <p className="text-sm text-surface-500">
+                  <p className="text-sm text-surface-600">
                     We&apos;ll respond shortly via WhatsApp.
                   </p>
                 </div>
@@ -190,7 +189,7 @@ export default function Contact() {
                   <div>
                     <label
                       htmlFor="contact-name"
-                      className="block text-sm font-semibold mb-2"
+                      className="block text-sm font-semibold mb-2 text-surface-800 dark:text-surface-200"
                     >
                       Full Name
                     </label>
@@ -203,17 +202,13 @@ export default function Contact() {
                         setFormState({ ...formState, name: e.target.value })
                       }
                       placeholder="Your full name"
-                      className="w-full px-4 py-3 text-sm rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
-                      style={{
-                        background: "var(--background)",
-                        borderColor: "var(--card-border)",
-                      }}
+                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 shadow-2xs"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="contact-phone"
-                      className="block text-sm font-semibold mb-2"
+                      className="block text-sm font-semibold mb-2 text-surface-800 dark:text-surface-200"
                     >
                       Phone Number
                     </label>
@@ -226,17 +221,13 @@ export default function Contact() {
                         setFormState({ ...formState, phone: e.target.value })
                       }
                       placeholder="+91 XXXXX XXXXX"
-                      className="w-full px-4 py-3 text-sm rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
-                      style={{
-                        background: "var(--background)",
-                        borderColor: "var(--card-border)",
-                      }}
+                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 shadow-2xs"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="contact-message"
-                      className="block text-sm font-semibold mb-2"
+                      className="block text-sm font-semibold mb-2 text-surface-800 dark:text-surface-200"
                     >
                       Message / Medicine Inquiry
                     </label>
@@ -249,17 +240,13 @@ export default function Contact() {
                         setFormState({ ...formState, message: e.target.value })
                       }
                       placeholder="Describe your requirement or list medicines you need..."
-                      className="w-full px-4 py-3 text-sm rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 resize-none"
-                      style={{
-                        background: "var(--background)",
-                        borderColor: "var(--card-border)",
-                      }}
+                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 resize-none shadow-2xs"
                     />
                   </div>
                   <button
                     id="contact-submit"
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white rounded-xl gradient-bg hover:opacity-90 transition-opacity shadow-lg"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white rounded-xl bg-brand-600 hover:bg-brand-700 transition-all shadow-md hover:shadow-lg"
                   >
                     <Send className="w-4 h-4" />
                     Send via WhatsApp

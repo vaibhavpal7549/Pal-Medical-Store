@@ -4,7 +4,7 @@ import { Clock, MapPin, Phone, Mail } from "lucide-react";
 
 export default function TopBar() {
   return (
-    <div className="w-full bg-brand-600 text-white text-xs z-[60] relative">
+    <div className="w-full bg-brand-700 text-white text-xs z-[60] relative border-b border-brand-800/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2 py-2">
         {/* Left Side */}
         <div className="flex items-center gap-4 sm:gap-6">

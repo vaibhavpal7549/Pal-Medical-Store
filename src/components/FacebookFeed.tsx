@@ -24,11 +24,11 @@ function FacebookIcon({ className = "" }: { className?: string }) {
 /* ─── Component ────────────────────────────────────────────── */
 export default function FacebookFeed() {
   return (
-    <section id="facebook-updates" className="section-padding">
+    <section id="facebook-updates" className="section-padding bg-white dark:bg-surface-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ─── Header ─────────────────────────────────────── */}
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-600 bg-brand-100 dark:bg-brand-900/30 dark:text-brand-400 mb-4">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             <FacebookIcon className="w-3.5 h-3.5" />
             Social Updates
           </span>
@@ -36,7 +36,7 @@ export default function FacebookFeed() {
             Latest Updates from{" "}
             <span className="gradient-text">Facebook</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-500 dark:text-surface-400 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
             Follow Pal Medical Store for health tips, offers, medicine updates,
             and important announcements.
           </p>
