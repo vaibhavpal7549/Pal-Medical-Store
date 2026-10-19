@@ -32,11 +32,11 @@ export default function FacebookFeed() {
             <FacebookIcon className="w-3.5 h-3.5" />
             Social Updates
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
             Latest Updates from{" "}
             <span className="gradient-text">Facebook</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
             Follow Pal Medical Store for health tips, offers, medicine updates,
             and important announcements.
           </p>
@@ -68,7 +68,7 @@ export default function FacebookFeed() {
             Follow Us on Facebook
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
-          <p className="text-xs text-surface-400 dark:text-surface-500 mt-3">
+          <p className="text-xs text-surface-600 dark:text-surface-400 font-medium mt-3">
             Stay updated with health tips, offers &amp; announcements
           </p>
         </AnimatedSection>

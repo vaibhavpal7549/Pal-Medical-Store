@@ -316,7 +316,7 @@ export default function PhotoGallery() {
 
           {/* ─── Image Count Badge ──────────────────────────── */}
           <AnimatedSection className="text-center mt-8">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-surface-500 dark:text-surface-400 bg-white/60 dark:bg-white/5 backdrop-blur-sm border border-surface-200 dark:border-surface-700">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-surface-700 dark:text-surface-300 bg-white/80 dark:bg-white/5 backdrop-blur-sm border border-surface-300 dark:border-surface-700 shadow-2xs">
               <Camera className="w-3.5 h-3.5" />
               Showing {filteredImages.length} of {galleryImages.length} photos
             </span>

@@ -54,11 +54,11 @@ export default function FAQ() {
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             FAQ
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
             Frequently Asked{" "}
             <span className="gradient-text">Questions</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
             Got questions? We&apos;ve got answers. Find quick answers to common
             queries about our products and services.
           </p>
@@ -108,7 +108,7 @@ export default function FAQ() {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                       >
-                        <div className="px-5 pb-5 text-sm text-surface-600 dark:text-surface-300 leading-relaxed border-t pt-4" style={{ borderColor: "var(--card-border)" }}>
+                        <div className="px-5 pb-5 text-sm text-surface-700 dark:text-surface-300 leading-relaxed border-t pt-4" style={{ borderColor: "var(--card-border)" }}>
                           {a}
                         </div>
                       </motion.div>
