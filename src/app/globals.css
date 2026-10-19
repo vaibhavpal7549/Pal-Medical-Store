@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ── Custom Theme ────────────────────────────────────────── */
 @theme inline {
   --color-background: var(--background);
@@ -50,21 +52,22 @@
 /* ── CSS Variables ───────────────────────────────────────── */
 :root {
   --background: #f8fafc;
-  --foreground: #0f172a;
+  --foreground: #0c0f17;
   --card-bg: #ffffff;
-  --card-border: #e2e8f0;
-  --nav-bg: rgba(255, 255, 255, 0.94);
-  --nav-border: rgba(226, 232, 240, 0.85);
-  --section-alt-bg: #f1f5f9;
+  --card-border: #cbd5e1;
+  --nav-bg: rgba(255, 255, 255, 0.96);
+  --nav-border: rgba(203, 213, 225, 0.9);
+  --section-alt-bg: #eef2f7;
   --hero-overlay: linear-gradient(135deg, rgba(21, 128, 61, 0.93), rgba(22, 101, 52, 0.88));
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(226, 232, 240, 0.8);
-  --shadow-2xs: 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-xs: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
-  --shadow-xl: 0 20px 32px -6px rgba(15, 23, 42, 0.1), 0 8px 16px -4px rgba(15, 23, 42, 0.06);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(203, 213, 225, 0.85);
+  --shadow-2xs: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-xs: 0 1px 3px rgba(15, 23, 42, 0.1), 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.1), 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.12), 0 2px 6px -1px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 4px 8px -2px rgba(15, 23, 42, 0.06);
+  --shadow-xl: 0 20px 32px -6px rgba(15, 23, 42, 0.14), 0 8px 16px -4px rgba(15, 23, 42, 0.08);
+  --color-surface-900: #0f172a;
 }
 
 .dark {
@@ -201,13 +204,13 @@ body {
 
 .card-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
 }
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 28px -4px rgba(22, 163, 74, 0.12), 0 6px 12px -2px rgba(15, 23, 42, 0.05);
-  border-color: rgba(22, 163, 74, 0.35) !important;
+  box-shadow: 0 14px 28px -4px rgba(22, 163, 74, 0.14), 0 6px 12px -2px rgba(15, 23, 42, 0.08);
+  border-color: rgba(22, 163, 74, 0.4) !important;
 }
 
 .dark .card-hover:hover {

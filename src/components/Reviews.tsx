@@ -15,10 +15,10 @@ export default function Reviews() {
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Testimonials
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-8 text-surface-900 dark:text-surface-50">
             What Our <span className="gradient-text">Customers Say</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed mb-10">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed mb-10">
             Real reviews from real customers — hear from the families and
             individuals who trust Pal Medical Store.
           </p>

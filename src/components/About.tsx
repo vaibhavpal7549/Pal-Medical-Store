@@ -42,11 +42,11 @@ export default function About() {
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             About Us
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
             Trusted Healthcare Partner{" "}
             <span className="gradient-text">Since 2010</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
             Pal Medical Store has been serving the Jaunpur community for over 15
             years, providing genuine medicines, health supplements, and
             personalised healthcare advice. We believe in building lasting
@@ -68,7 +68,7 @@ export default function About() {
                   <Icon className="w-6 h-6 text-brand-600 dark:text-brand-400" />
                 </div>
                 <h3 className="text-lg font-bold mb-2 text-surface-900 dark:text-surface-50">{title}</h3>
-                <p className="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+                <p className="text-sm text-surface-700 dark:text-surface-300 leading-relaxed">
                   {desc}
                 </p>
                 {/* Hover accent line */}

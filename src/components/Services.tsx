@@ -63,11 +63,11 @@ export default function Services() {
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Our Services
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
             Comprehensive{" "}
             <span className="gradient-text">Healthcare Services</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
             From prescription medicines to home delivery, we offer complete
             pharmacy solutions to meet all your healthcare needs under one roof.
           </p>
@@ -93,7 +93,7 @@ export default function Services() {
                     <Icon className={`w-7 h-7 ${iconColor}`} />
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-surface-900 dark:text-surface-50">{title}</h3>
-                  <p className="text-sm text-surface-600 dark:text-surface-300 leading-relaxed">
+                  <p className="text-sm text-surface-700 dark:text-surface-300 leading-relaxed">
                     {desc}
                   </p>
                 </div>

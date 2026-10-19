@@ -140,7 +140,7 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-base font-bold leading-tight tracking-tight">
+                <span className="text-base font-bold leading-tight tracking-tight text-surface-900 dark:text-white">
                   Pal Medical
                 </span>
                 <span className="text-[10px] font-semibold text-brand-600 dark:text-brand-400 uppercase tracking-widest leading-none">
@@ -163,7 +163,7 @@ export default function Navbar() {
                     ${
                       activeSection === href.replace("#", "")
                         ? "text-brand-600 dark:text-brand-400"
-                        : "text-surface-700 dark:text-surface-300 hover:text-brand-600 dark:hover:text-brand-400"
+                        : "text-surface-800 dark:text-surface-200 hover:text-brand-600 dark:hover:text-brand-400"
                     }`}
                 >
                   {label}
@@ -250,14 +250,14 @@ export default function Navbar() {
             >
               <div className="max-w-2xl mx-auto px-4 py-4">
                 <div className="relative">
-                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-surface-400" />
+                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-surface-500 dark:text-surface-400" />
                   <input
                     id="medicine-search"
                     type="text"
                     placeholder="Search medicines, health products..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-12 pr-4 py-3 text-sm rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
+                    className="w-full pl-12 pr-4 py-3 text-sm text-surface-900 dark:text-surface-100 placeholder:text-surface-500 dark:placeholder:text-surface-400 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
                     style={{
                       background: "var(--card-bg)",
                       borderColor: "var(--card-border)",
@@ -276,7 +276,7 @@ export default function Navbar() {
                     {filteredMeds.map((med) => (
                       <button
                         key={med}
-                        className="w-full text-left px-4 py-2.5 text-sm hover:bg-brand-50 dark:hover:bg-brand-900/20 transition-colors flex items-center gap-3"
+                        className="w-full text-left px-4 py-2.5 text-sm font-medium text-surface-800 dark:text-surface-200 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:text-brand-700 dark:hover:text-brand-300 transition-colors flex items-center gap-3"
                         onClick={() => {
                           setSearchQuery(med);
                           setSearchOpen(false);
@@ -293,8 +293,8 @@ export default function Navbar() {
                   </div>
                 )}
                 {searchQuery.length > 0 && filteredMeds.length === 0 && (
-                  <p className="mt-3 text-sm text-center text-surface-500">
-                    Medicine not found? <a href="#contact" className="text-brand-500 font-medium hover:underline" onClick={() => setSearchOpen(false)}>Contact us</a> for availability.
+                  <p className="mt-3 text-sm text-center text-surface-700 dark:text-surface-300 font-medium">
+                    Medicine not found? <a href="#contact" className="text-brand-600 dark:text-brand-400 font-semibold hover:underline" onClick={() => setSearchOpen(false)}>Contact us</a> for availability.
                   </p>
                 )}
               </div>
@@ -334,13 +334,13 @@ export default function Navbar() {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-bold text-sm leading-tight">Pal Medical</span>
-                    <span className="text-[10px] font-medium text-brand-500 uppercase tracking-wider leading-none">Store</span>
+                    <span className="font-bold text-sm leading-tight text-surface-900 dark:text-white">Pal Medical</span>
+                    <span className="text-[10px] font-semibold text-brand-600 dark:text-brand-400 uppercase tracking-wider leading-none">Store</span>
                   </div>
                 </div>
                 <button
                   onClick={() => setMobileOpen(false)}
-                  className="p-2 rounded-lg hover:bg-surface-100 dark:hover:bg-surface-800"
+                  className="p-2 rounded-lg text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-surface-800"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -357,10 +357,10 @@ export default function Navbar() {
                       e.preventDefault();
                       handleNavClick(href);
                     }}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${
                       activeSection === href.replace("#", "")
-                        ? "bg-brand-50 dark:bg-brand-900/20 text-brand-500"
-                        : "hover:bg-surface-100 dark:hover:bg-surface-800"
+                        ? "bg-brand-50 dark:bg-brand-900/20 text-brand-600 dark:text-brand-400 font-bold"
+                        : "text-surface-800 dark:text-surface-200 hover:bg-surface-100 dark:hover:bg-surface-800 hover:text-brand-600"
                     }`}
                   >
                     <ChevronDown className="w-4 h-4 -rotate-90" />

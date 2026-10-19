@@ -207,11 +207,11 @@ export default function PhotoGallery() {
               <Camera className="w-3.5 h-3.5" />
               Photo Gallery
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
               Our Store{" "}
               <span className="gradient-text">Gallery</span>
             </h2>
-            <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+            <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
               Take a look at our pharmacy, products, and customer service
               environment.
             </p>
@@ -219,7 +219,7 @@ export default function PhotoGallery() {
 
           {/* ─── Filter Buttons ─────────────────────────────── */}
           <AnimatedSection className="flex flex-wrap justify-center gap-3 mb-12">
-            <div className="inline-flex items-center gap-2 mr-2 text-sm text-surface-500 dark:text-surface-400 font-medium">
+            <div className="inline-flex items-center gap-2 mr-2 text-sm text-surface-700 dark:text-surface-300 font-semibold">
               <SlidersHorizontal className="w-4 h-4" />
               <span className="hidden sm:inline">Filter:</span>
             </div>

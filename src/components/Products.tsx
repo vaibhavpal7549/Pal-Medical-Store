@@ -73,11 +73,11 @@ export default function Products() {
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Product Categories
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
             Browse Our{" "}
             <span className="gradient-text">Product Range</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
             Explore thousands of healthcare products across categories. 
             All products sourced from authorised distributors.
           </p>
@@ -102,13 +102,13 @@ export default function Products() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-lg font-bold mb-1 text-surface-900 dark:text-surface-50">{title}</h3>
-                      <p className="text-sm text-surface-600 dark:text-surface-300">
+                      <p className="text-sm text-surface-700 dark:text-surface-300 leading-relaxed">
                         {desc}
                       </p>
                     </div>
                   </div>
                   <div className="mt-5 flex items-center justify-between pt-4 border-t" style={{ borderColor: "var(--card-border)" }}>
-                    <span className="text-xs font-semibold text-surface-500 dark:text-surface-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-surface-600 dark:text-surface-400 uppercase tracking-wider">
                       Products Available
                     </span>
                     <span className="text-lg font-extrabold gradient-text">
