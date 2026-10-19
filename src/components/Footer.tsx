@@ -33,8 +33,8 @@ const serviceLinks = [
 ];
 
 const socialLinks = [
-  { icon: Globe, href: "#", label: "Facebook" },
-  { icon: ExternalLink, href: "#", label: "Instagram" },
+  { icon: Globe, href: "https://facebook.com/palmedicalstore", label: "Facebook" },
+  { icon: ExternalLink, href: "https://www.instagram.com/palmedicalstore_", label: "Instagram" },
   { icon: MessageCircle, href: "#", label: "Twitter" },
 ];
 
@@ -173,7 +173,7 @@ export default function Footer() {
               </a>
               {/* Instagram */}
               <a
-                href="https://instagram.com/#"
+                href="https://www.instagram.com/palmedicalstore_"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
