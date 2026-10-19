@@ -85,10 +85,10 @@ export default function Contact() {
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200/80 dark:bg-brand-900/30 dark:text-brand-400 dark:border-brand-800/40 mb-4 shadow-2xs">
             Contact Us
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-surface-900 dark:text-surface-50">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="mt-5 text-base sm:text-lg text-surface-600 dark:text-surface-300 leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-surface-700 dark:text-surface-300 leading-relaxed">
             Have a question about medicines or need a prescription filled?
             Reach out to us — we&apos;re always here to help.
           </p>
@@ -115,7 +115,7 @@ export default function Contact() {
                         <Icon className={`w-5 h-5 ${color}`} />
                       </div>
                       <div>
-                        <div className="text-xs font-semibold text-surface-500 dark:text-surface-400 uppercase tracking-wider mb-0.5">
+                        <div className="text-xs font-semibold text-surface-600 dark:text-surface-400 uppercase tracking-wider mb-0.5">
                           {label}
                         </div>
                         <div className="text-sm font-semibold text-surface-900 dark:text-surface-100">{value}</div>
@@ -133,7 +133,7 @@ export default function Contact() {
                         <Icon className={`w-5 h-5 ${color}`} />
                       </div>
                       <div>
-                        <div className="text-xs font-semibold text-surface-500 dark:text-surface-400 uppercase tracking-wider mb-0.5">
+                        <div className="text-xs font-semibold text-surface-600 dark:text-surface-400 uppercase tracking-wider mb-0.5">
                           {label}
                         </div>
                         <div className="text-sm font-semibold text-surface-900 dark:text-surface-100">{value}</div>
@@ -170,7 +170,7 @@ export default function Contact() {
               }}
             >
               <h3 className="text-xl font-bold mb-2 text-surface-900 dark:text-surface-50">Send Us a Message</h3>
-              <p className="text-sm text-surface-600 dark:text-surface-300 mb-6">
+              <p className="text-sm text-surface-700 dark:text-surface-300 mb-6">
                 Fill in the form below and we&apos;ll get back to you via WhatsApp.
               </p>
 
@@ -179,8 +179,8 @@ export default function Contact() {
                   <div className="w-16 h-16 rounded-full bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mb-4">
                     <CheckCircle className="w-8 h-8 text-brand-600" />
                   </div>
-                  <h4 className="text-lg font-bold mb-1">Message Sent!</h4>
-                  <p className="text-sm text-surface-600">
+                  <h4 className="text-lg font-bold mb-1 text-surface-900 dark:text-surface-50">Message Sent!</h4>
+                  <p className="text-sm text-surface-700 dark:text-surface-300">
                     We&apos;ll respond shortly via WhatsApp.
                   </p>
                 </div>
@@ -202,7 +202,7 @@ export default function Contact() {
                         setFormState({ ...formState, name: e.target.value })
                       }
                       placeholder="Your full name"
-                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 shadow-2xs"
+                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-500 dark:placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 shadow-2xs"
                     />
                   </div>
                   <div>
@@ -221,7 +221,7 @@ export default function Contact() {
                         setFormState({ ...formState, phone: e.target.value })
                       }
                       placeholder="+91 XXXXX XXXXX"
-                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 shadow-2xs"
+                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-500 dark:placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 shadow-2xs"
                     />
                   </div>
                   <div>
@@ -240,7 +240,7 @@ export default function Contact() {
                         setFormState({ ...formState, message: e.target.value })
                       }
                       placeholder="Describe your requirement or list medicines you need..."
-                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 resize-none shadow-2xs"
+                      className="w-full px-4 py-3 text-sm rounded-xl border transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-surface-50 dark:bg-surface-900/60 border-surface-300 dark:border-surface-700 text-surface-900 dark:text-surface-100 placeholder:text-surface-500 dark:placeholder:text-surface-400 focus:bg-white dark:focus:bg-surface-900 resize-none shadow-2xs"
                     />
                   </div>
                   <button

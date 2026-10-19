@@ -71,7 +71,7 @@ export default function FloatingButtons() {
             }}
             aria-label="Back to top"
           >
-            <ArrowUp className="w-5 h-5 text-brand-500" />
+            <ArrowUp className="w-5 h-5 text-brand-600 dark:text-brand-400" />
           </motion.button>
         )}
       </AnimatePresence>

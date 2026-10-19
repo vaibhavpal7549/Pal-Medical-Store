@@ -108,7 +108,7 @@ export default function Footer() {
                 </div>
               </div>
             </a>
-            <p className="text-sm text-surface-400 leading-relaxed mb-6 max-w-xs">
+            <p className="text-sm text-surface-300 leading-relaxed mb-6 max-w-xs">
               Your trusted pharmacy partner in Jaunpur since 2010. Genuine
               medicines, expert guidance, and compassionate care — always.
             </p>
@@ -124,7 +124,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className={`w-10 h-10 rounded-xl bg-surface-800 ${hoverBg} flex items-center justify-center transition-all group`}
                 >
-                  <Icon className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors" />
+                  <Icon className="w-4 h-4 text-surface-300 group-hover:text-white transition-colors" />
                 </a>
               ))}
             </div>
@@ -141,7 +141,7 @@ export default function Footer() {
                   <a
                     href={href}
                     onClick={(e) => { e.preventDefault(); handleNavClick(href); }}
-                    className="group flex items-center gap-2 text-sm text-surface-400 hover:text-brand-400 transition-colors"
+                    className="group flex items-center gap-2 text-sm text-surface-300 hover:text-brand-400 transition-colors"
                   >
                     <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                     {label}
@@ -159,7 +159,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {serviceLinks.map((s) => (
                 <li key={s}>
-                  <span className="text-sm text-surface-400">{s}</span>
+                  <span className="text-sm text-surface-300">{s}</span>
                 </li>
               ))}
             </ul>
@@ -172,19 +172,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+917393970252" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
+                <a href="tel:+917393970252" className="flex items-start gap-3 text-sm text-surface-300 hover:text-brand-400 transition-colors">
                   <Phone className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
                   +91 73939 70252
                 </a>
               </li>
               <li>
-                <a href="mailto:palmedicalstore98390gh@gmail.com" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
+                <a href="mailto:palmedicalstore98390gh@gmail.com" className="flex items-start gap-3 text-sm text-surface-300 hover:text-brand-400 transition-colors">
                   <Mail className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
                   palmedicalstore98390gh@gmail.com
                 </a>
               </li>
               <li>
-                <a href="https://www.google.com/maps/place/Pal+Medical+Store/@26.0374607,82.5171226,17z/data=!3m1!4b1!4m6!3m5!1s0x399067c1e5d490af:0x34bd9d6d7ca43a89!8m2!3d26.0374608!4d82.5219935!16s%2Fg%2F11h4_zzhpk?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-surface-400 hover:text-brand-400 transition-colors">
+                <a href="https://www.google.com/maps/place/Pal+Medical+Store/@26.0374607,82.5171226,17z/data=!3m1!4b1!4m6!3m5!1s0x399067c1e5d490af:0x34bd9d6d7ca43a89!8m2!3d26.0374608!4d82.5219935!16s%2Fg%2F11h4_zzhpk?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-surface-300 hover:text-brand-400 transition-colors">
                   <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-brand-500" />
                   Pal Medical Store, Shahganj Road, Patti Narendrapur, Jaunpur, Uttar Pradesh, 223102, India
                 </a>
@@ -204,7 +204,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="w-10 h-10 rounded-xl bg-surface-800 hover:bg-[#1877F2] flex items-center justify-center transition-colors group"
               >
-                <FacebookIcon className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors" />
+                <FacebookIcon className="w-4 h-4 text-surface-300 group-hover:text-white transition-colors" />
               </a>
               {/* Instagram */}
               <a
@@ -214,7 +214,7 @@ export default function Footer() {
                 aria-label="Instagram"
                 className="w-10 h-10 rounded-xl bg-surface-800 hover:bg-gradient-to-br hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] flex items-center justify-center transition-all group"
               >
-                <InstagramIcon className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors" />
+                <InstagramIcon className="w-4 h-4 text-surface-300 group-hover:text-white transition-colors" />
               </a>
               {/* WhatsApp */}
               <a
@@ -224,27 +224,7 @@ export default function Footer() {
                 aria-label="WhatsApp"
                 className="w-10 h-10 rounded-xl bg-surface-800 hover:bg-[#25D366] flex items-center justify-center transition-colors group"
               >
-                <WhatsAppIcon className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors" />
-              </a>
-              {/* YouTube */}
-              <a
-                href="https://youtube.com/@palmedicalstore"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="w-10 h-10 rounded-xl bg-surface-800 hover:bg-[#FF0000] flex items-center justify-center transition-colors group"
-              >
-                <svg className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              </a>
-              {/* Twitter / X */}
-              <a
-                href="https://x.com/#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X"
-                className="w-10 h-10 rounded-xl bg-surface-800 hover:bg-black flex items-center justify-center transition-colors group"
-              >
-                <svg className="w-4 h-4 text-surface-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <WhatsAppIcon className="w-4 h-4 text-surface-300 group-hover:text-white transition-colors" />
               </a>
             </div>
           </div>
@@ -252,10 +232,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-surface-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-surface-500 text-center sm:text-left">
+          <p className="text-xs text-surface-400 text-center sm:text-left">
             © {new Date().getFullYear()} Pal Medical Store. All rights reserved.
           </p>
-          <p className="text-xs text-surface-500 flex items-center gap-1">
+          <p className="text-xs text-surface-400 flex items-center gap-1">
             Made with <Heart className="w-3 h-3 text-rose-500 fill-rose-500" /> by Pal Family
           </p>
         </div>
